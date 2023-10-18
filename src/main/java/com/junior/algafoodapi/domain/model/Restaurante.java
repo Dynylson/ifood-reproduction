@@ -1,14 +1,15 @@
 package com.junior.algafoodapi.domain.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 
 import java.math.BigDecimal;
 
 @Entity
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
 public class Restaurante {
 
     @EqualsAndHashCode.Include
