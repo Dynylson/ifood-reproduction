@@ -7,9 +7,7 @@ import jakarta.persistence.Id;
 import lombok.*;
 
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-@Getter
-@Setter
-@NoArgsConstructor
+@Data
 @Entity
 public class Estado {
 
