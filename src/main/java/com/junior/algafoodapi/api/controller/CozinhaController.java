@@ -54,9 +54,9 @@ public class CozinhaController {
         if (cozinhaAtual.isPresent()) {
             BeanUtils.copyProperties(cozinha, cozinhaAtual.get(), "id");
 
-            cozinhaRepository.save(cozinhaAtual.get());
+            Cozinha cozinhaSalva = cadastroCozinhaService.salvar(cozinhaAtual.get());
 
-            return ResponseEntity.ok(cozinhaAtual.get());
+            return ResponseEntity.ok(cozinhaSalva);
 
         }
 
